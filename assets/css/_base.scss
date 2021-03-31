@@ -1,0 +1,484 @@
+/* BOTON FLOTANTE DE WHASTAPP */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: 'Montserrat' !important;
+    color: #202020;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  *{
+    text-decoration: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section {
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    overflow: hidden;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .section-title {
+    padding-bottom: 40px;
+  }
+  
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* PERSONALIZANDO SCROLL VERTICAL */
+  
+  body::-webkit-scrollbar {
+    width: 10px;     /* Tamaño del scroll en vertical */
+    height: 25px;    /* Tamaño del scroll en horizontal */
+    background-color: #f0ebeb;
+    opacity: 0.6;
+    /* display: none;   Ocultar scroll */
+  }
+  
+  /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+  body::-webkit-scrollbar-thumb {
+    background: #b3b3b3;
+    border-radius: 3px;
+  }
+  /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+  body::-webkit-scrollbar-thumb:hover,
+  body::-webkit-scrollbar-thumb:active  {
+    background: #848484;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+  }
+  
+  .back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #052f8a;
+    color: #ffffff;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i:hover {
+    background: #03077F;
+    color: #ffffff;
+  }
+  
+
+  /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 70px;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+  background: #4297ec;
+  opacity: 0.8;
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#header .logo img {
+  max-height: 30px;
+}
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /* Desktop Navigation */
+
+  .nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-menu > ul {
+    display: flex;
+  }
+  
+  .nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 28px;
+  }
+
+  .nav-menu ul a {
+    font-family: "Montserrat" !important;
+    padding: 10px 5px;
+    font-size: 12px;
+    text-transform: none;
+    color: #000000;
+  }
+  
+  .nav-menu a {
+    display: block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+    color: #19191a;
+    transform: scale(1.2, 1.3);
+  }
+  
+  .nav-menu .drop-down ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+  }
+  
+  .nav-menu .drop-down:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+  
+  .nav-menu .drop-down li {
+    min-width: 180px;
+    position: relative;
+  }
+  
+  .nav-menu .drop-down ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    color: #151515;
+  }
+  
+  .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+    color: #ffffff;
+    background: #151515;
+  }
+  
+  .nav-menu .drop-down > a:after {
+    content: "\ea99";
+    font-family: IcoFont;
+    padding-left: 5px;
+  }
+  
+  
+  
+  /* Mobile Navigation */
+  .mobile-nav-toggle {
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    z-index: 9998;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+  }
+  
+  .mobile-nav-toggle i {
+    color: #fff;
+  }
+  
+  .mobile-nav {
+    position: fixed;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #fff;
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+  
+  .mobile-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .mobile-nav a {
+    display: block;
+    position: relative;
+    color: #151515;
+    padding: 10px 20px;
+    font-weight: 500;
+    outline: none;
+  }
+  
+  .mobile-nav a:hover,
+  .mobile-nav .active > a,
+   .mobile-nav li:hover > a {
+    color: #ffffff;
+    text-decoration: none;
+    background: #1c5fdb;
+  }
+  
+  .mobile-nav .drop-down > a:after {
+    content: "\ea99";
+    font-family: IcoFont;
+    padding-left: 10px;
+    position: absolute;
+    right: 15px;
+  }
+  
+  .mobile-nav .active.drop-down > a:after {
+    content: "\eaa1";
+  }
+  
+  .mobile-nav .drop-down > a {
+    padding-right: 35px;
+  }
+  
+  .mobile-nav .drop-down ul {
+    display: none;
+    overflow: hidden;
+  }
+  
+  .mobile-nav .drop-down li {
+    padding-left: 20px;
+  }
+  
+  .mobile-nav-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    display: none;
+    transition: ease-in-out 0.2s;
+  }
+  
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+  
+  .mobile-nav-active .mobile-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .mobile-nav-active .mobile-nav-toggle i {
+    color: #fff;
+  }
+  
+  /*--------------------------------------------------------------
+  # Banner
+  --------------------------------------------------------------*/
+  #banner{
+    width: 100%;
+    height: 100px;
+    background-color: #3c75ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  #banner h1{
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    font-family: "Montserrat" !important;
+  }
+  
+  #banner h4{
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "Montserrat" !important;
+    letter-spacing: 0px;
+  }
+  
+  #banner a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Montserrat" !important;
+    letter-spacing: 0px;
+    background-color: #03077F;
+    border-radius: 0px 0px 15px 0px;
+    padding: 15px;
+  }
+  
+  #banner a:hover{
+    background-color: #ffffff;
+    color: #1346b6;
+  }
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  #footer {
+    background: #3c75ee;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Montserrat" !important;
+  }
+  
+  #footer .footer-top {
+    background: #052e88;
+    border-bottom: 1px solid #222222;
+    padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+  }
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #888787;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+    background: #3c75ee;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  
+  #footer .copyright {
+    font-size: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    color: #03077F;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }

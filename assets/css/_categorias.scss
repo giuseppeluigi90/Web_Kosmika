@@ -1,0 +1,285 @@
+  /*--------------------------------------------------------------
+  # categoria
+  --------------------------------------------------------------*/
+   
+  .categoria{
+    height: 500px;
+    font-family: "Montserrat" !important;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #categoria iframe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+  }
+
+  .categoria .card-category{
+    height: 400px;
+    padding: 20px;
+  }
+
+  .categoria .card-category h3{
+    font-size: 35px;
+    font-weight: 600;
+    color: #cccccc;
+  }
+
+  .categoria .card-category h2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 55px;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    color: #ffffff;
+    line-height: 60px;
+  }
+
+  .categoria .card-category p{
+    font-size: 20px;
+    font-weight: 200;
+    color: #eeeded;
+    line-height: 30px;
+  }
+
+
+  /* ================================================================= */
+
+  .subcategoria{
+    height: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  .subcategoria .icon-box {
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    padding: 60px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.568);
+    transition: all ease-in-out 0.3s;
+    background-color: #073db1;
+    border-bottom: 9px solid #03077F;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .subcategoria .icon-box:hover {
+    transition: all ease-in-out 0.3s;
+    border-bottom: 10px solid #ffffff;
+    background-color: #085adf;
+  }
+
+  .subcategoria .btnver3{
+    font-size: 12px;
+    margin: 0px auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #073db1;
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    color: #073db1;
+    float: right;
+  }
+
+  .subcategoria .btnver3:hover{
+    background-color: #ffffff;
+    border: 1px solid #073db1;
+    color: #073db1;
+  }
+
+  .subcategoria .btnver3 a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .subcategoria .btnver3:hover a{
+    text-decoration: none;
+    color: #073db1;
+  }
+
+  .subcategoria .info-box {
+    height: 240px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+
+  .subcategoria .info-box h2{
+    font-family: "Montserrat" i !important;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: initial;
+    color: #232323;
+  }
+  
+  .subcategoria .info-box h3 {
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #073db1;
+    text-align: left;
+    letter-spacing: -1px;
+  }
+    
+  .subcategoria .image {
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 200px;
+  }
+
+  /*  Subcategoria Marketing */
+
+  .subcategoria .icon-box2 {
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    padding: 60px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.568);
+    transition: all ease-in-out 0.3s;
+    background-color: #3E0154;
+    border-bottom: 9px solid #21022c;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .subcategoria .icon-box2:hover {
+    transition: all ease-in-out 0.3s;
+    border-bottom: 10px solid #ffffff;
+    background-color: #650588;
+  }
+
+  .subcategoria .info-box2 .btnver3{
+    font-size: 12px;
+    margin: 0px auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #3E0154;
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    float: right;
+  }
+
+  .subcategoria .info-box2  .btnver3:hover{
+    background-color: #ffffff;
+    border: 1px solid #3E0154;
+    color: #3E0154;
+  }
+
+  .subcategoria .info-box2 .btnver3 a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .subcategoria .info-box2 .btnver3:hover a{
+    text-decoration: none;
+    color: #3E0154;
+  }
+
+  .subcategoria .info-box2 h2{
+    font-family: "Montserrat" i !important;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: initial;
+    color: #232323;
+  }
+  
+  .subcategoria .info-box2 h3 {
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #3E0154;
+    text-align: left;
+    letter-spacing: -1px;
+  }
+
+  /*  Subcategoria Multimedia */
+
+  .subcategoria .icon-box3 {
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    padding: 60px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.568);
+    transition: all ease-in-out 0.3s;
+    background-color: #232323;
+    border-bottom: 9px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .subcategoria .icon-box3:hover {
+    transition: all ease-in-out 0.3s;
+    border-bottom: 10px solid #ffffff;
+    background-color: #000000;
+  }
+
+  .subcategoria .info-box3 .btnver3{
+    font-size: 12px;
+    margin: 0px auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #232323;
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    float: right;
+  }
+
+  .subcategoria .info-box3  .btnver3:hover{
+    background-color: #ffffff;
+    border: 1px solid #232323;
+    color: #232323;
+  }
+
+  .subcategoria .info-box3 .btnver3 a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .subcategoria .info-box3 .btnver3:hover a{
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .subcategoria .info-box3 h2{
+    font-family: "Montserrat" i !important;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: initial;
+    color: #232323;
+  }
+  
+  .subcategoria .info-box3 h3 {
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #000000;
+    text-align: left;
+    letter-spacing: -1px;
+  }
+
+
